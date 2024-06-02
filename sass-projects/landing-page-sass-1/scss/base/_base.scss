@@ -1,0 +1,22 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: "Raleway", sans-serif;
+    color: color(primary);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(6rem , 1fr )  repeat(10 , minmax(min-content , 1fr))   minmax(6rem , 1fr );
+    grid-template-rows: repeat(9, min-content);
+}

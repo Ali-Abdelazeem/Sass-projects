@@ -1,0 +1,47 @@
+.header {
+  background-color: color(primary);
+@include section(1,2);
+  color: color(secondary);
+
+  .wrapper {
+    @include wrapper()
+  }
+
+  &-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+      width: 100px;
+
+      &-img {
+        width: 100%;
+      }
+    }
+    &-nav .fa-bars {
+      font-size: 22px;
+    }
+  }
+
+  &-under {
+    @include centring();
+    padding: 20rem 0;
+    &-title {
+      @include main-title()
+      
+    }
+
+    &-data {
+      @include data();
+      
+    }
+  }
+
+  .sign {
+    @include centring();
+    padding: 1rem;
+    font-size: 1.7rem;
+  }
+}

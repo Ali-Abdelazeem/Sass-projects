@@ -1,0 +1,23 @@
+.head-sec {
+    @include centring();
+    text-align: center;
+    color: color(primary);
+
+    img {
+        width: 15rem;
+    }
+
+    .title {
+        @include main-title();
+        padding: 3rem 0;
+    }
+
+    .text {
+        width: 70%;
+        margin: 0 auto;
+        font-weight: 500;
+        font-size: 1.4rem;
+        letter-spacing: 1.8px;
+        line-height: 2;
+    }
+}

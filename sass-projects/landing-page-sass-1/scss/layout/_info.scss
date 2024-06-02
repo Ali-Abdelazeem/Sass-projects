@@ -1,0 +1,21 @@
+.info {
+  @include section(2,3);
+  padding: 10rem 0;
+  .wrapper {
+    @include wrapper();
+
+    .triangle {
+      width: 10rem;
+      height: 10rem;
+      margin: auto {
+        bottom: 2rem;
+      }
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      background-color: rgb(255, 111, 0);
+    }
+    .text {
+      @include paragraph(65%);
+    }
+  }
+  
+}

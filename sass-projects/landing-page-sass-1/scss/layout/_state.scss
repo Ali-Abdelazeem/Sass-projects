@@ -1,0 +1,23 @@
+.state {
+    background-color: color(primary);
+    @include section(4,5);
+    .wrapper {
+        @include wrapper();
+        padding: 4rem 0;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        
+        .states {
+            background-color: color(secondary);
+            padding: 3rem;
+            text-align: center;
+            font-size: 1.7rem;
+
+            span {
+                display: block;
+                
+            }
+        }
+    }
+}

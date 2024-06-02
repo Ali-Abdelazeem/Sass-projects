@@ -1,0 +1,66 @@
+.services {
+  background-color: color(secondary);
+  color: color(primary);
+@include section(3,4);
+
+
+  .wrapper {
+    grid-column: 3/11;
+
+
+
+    .text {
+      padding-bottom: 5rem;
+    }
+    
+    .top-cards {
+        
+        .fa-cart-shopping {
+            font-size: 3.5rem;
+        }
+    
+        h3 {
+          letter-spacing: 6px;
+          font-weight: 500;
+          padding: 2rem 0;
+          text-transform: uppercase;
+    
+          span {
+            display: block;
+          }
+        }
+    
+        p {
+            line-height: 2;
+        }
+    }
+
+    .down-cards {
+
+        .langs {
+            align-items: normal;
+            padding: 1.5rem;
+            .lang {
+                position: relative;
+                
+                text-transform: uppercase;
+                text-align: start;
+                margin-bottom: 3rem;
+
+                span {
+                    margin-top: 1rem;
+                    display: block;
+                    width: 0;
+                    height: .5rem;
+                    background-color: orange;
+                    transition: all .6s;
+                }
+            }
+        }
+
+    }
+    
+    
+  }
+
+}
